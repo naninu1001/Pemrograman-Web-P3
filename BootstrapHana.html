@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Clone - Bootstrap Grid</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Highlight scroll */
+    .highlight-scroll {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding-bottom: 0.5rem;
+    }
+    .highlight-item {
+      display: inline-block;
+      text-align: center;
+      margin-right: 1rem;
+    }
+    .highlight-item img {
+      width: 4rem;
+      height: 4rem;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #dee2e6;
+    }
+    /* Feed square images */
+    .feed-img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+    /* Sidebar desktop */
+    .sidebar {
+      height: 100vh;
+      width: 15rem;
+    }
+    /* Mobile navbar */
+    @media (min-width: 768px) {
+      .mobile-nav {
+        display: none !important;
+      }
+      .main-content {
+        margin-left: 15rem;
+      }
+    }
+    @media (max-width: 767px) {
+      .desktop-sidebar {
+        display: none !important;
+      }
+      .main-content {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-dark">
+
+  <!-- Sidebar Desktop -->
+  <aside class="desktop-sidebar position-fixed top-0 start-0 bg-white border-end p-4 sidebar d-flex flex-column">
+    <h1 class="fs-3 fw-bold mb-8">Instagram</h1>
+    <nav class="nav flex-column gap-4 fs-5">
+      <a href="#" class="nav-link text-dark hover-fw-semibold">🏠 Beranda</a>
+      <a href="#" class="nav-link text-dark hover-fw-semibold">🔍 Cari</a>
+      <a href="#" class="nav-link text-dark hover-fw-semibold">✨ Jelajahi</a>
+      <a href="#" class="nav-link text-dark hover-fw-semibold">🎥 Reels</a>
+      <a href="#" class="nav-link text-dark hover-fw-semibold">💬 Pesan</a>
+      <a href="#" class="nav-link text-dark hover-fw-semibold">❤️ Notifikasi</a>
+      <a href="#" class="nav-link text-dark hover-fw-semibold">➕ Buat</a>
+      <a href="#" class="nav-link text-dark hover-fw-semibold">👤 Profil</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content container-fluid p-4 p-md-8 pb-20">
+    
+    <!-- Header Profil -->
+    <section class="d-flex flex-column flex-md-row align-items-center gap-4 mb-4">
+      <!-- Foto Profil -->
+      <img src="assets/foto7.jpg" class="rounded-circle border border-2" style="width: 8rem; height: 8rem;" alt="profil">
+      
+      <!-- Bio -->
+      <div class="d-flex flex-column">
+        <div class="d-flex flex-column flex-md-row align-items-center gap-4 mb-2">
+          <h2 class="fs-5 fw-bold mb-0">hana.nhumairo</h2>
+          <div class="d-flex gap-2">
+            <button class="btn btn-outline-secondary btn-sm px-4 py-1 fw-semibold">Ikuti</button>
+            <button class="btn btn-outline-secondary btn-sm px-4 py-1 fw-semibold">Kirim pesan</button>
+          </div>
+        </div>
+        <div class="d-flex gap-6 mb-2">
+          <p class="mb-0"><span class="fw-bold">12</span> kiriman</p>
+          <p class="mb-0"><span class="fw-bold">513</span> pengikut</p>
+          <p class="mb-0"><span class="fw-bold">504</span> diikuti</p>
+        </div>
+        <p class="fw-semibold mb-1">Hana</p>
+        <p class="text-muted mb-0 small">Bio singkat bisa ditulis di sini ✨</p>
+      </div>
+    </section>
+
+    <!-- Highlight Story -->
+    <section class="highlight-scroll mb-4 d-flex gap-4">
+      <div class="highlight-item">
+        <div class="border border-2 border-gray-300 rounded-circle overflow-hidden" style="width: 4rem; height: 4rem;">
+          <img src="assets/foto1.jpg" alt="Highlight" class="w-100 h-100 object-fit-cover">
+        </div>
+        <div class="small mt-2">Highlight</div>
+      </div>
+      <div class="highlight-item">
+        <div class="border border-2 border-gray-300 rounded-circle overflow-hidden" style="width: 4rem; height: 4rem;">
+          <img src="assets/foto2.jpg" alt="Story" class="w-100 h-100 object-fit-cover">
+        </div>
+        <div class="small mt-2">Story</div>
+      </div>
+      <div class="highlight-item">
+        <div class="border border-2 border-gray-300 rounded-circle overflow-hidden" style="width: 4rem; height: 4rem;">
+          <img src="assets/foto21.jpg" alt="Me" class="w-100 h-100 object-fit-cover">
+        </div>
+        <div class="small mt-2">Me</div>
+      </div>
+    </section>
+
+    <!-- Feed Foto -->
+    <section class="row g-1 mt-4">
+      <!-- Contoh feed 12 gambar -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 aspect-ratio-1x1"><img src="assets/foto1.jpg" class="feed-img" alt="foto 1"></div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 aspect-ratio-1x1"><img src="assets/foto2.jpg" class="feed-img" alt="foto 2"></div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 aspect-ratio-1x1"><img src="assets/foto3.jpg" class="feed-img" alt="foto 3"></div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 aspect-ratio-1x1"><img src="assets/foto4.jpg" class="feed-img" alt="foto 4"></div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 aspect-ratio-1x1"><img src="assets/foto5.jpg" class="feed-img" alt="foto 5"></div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 aspect-ratio-1x1"><img src="assets/foto6.jpg" class="feed-img" alt="foto 6"></div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 aspect-ratio-1x1"><img src="assets/foto7.png" class="feed-img" alt="foto 7"></div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 aspect-ratio-1x1"><img src="assets/foto8.png" class="feed-img" alt="foto 8"></div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 aspect-ratio-1x1"><img src="assets/foto9.png" class="feed-img" alt="foto 9"></div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 aspect-ratio-1x1"><img src="assets/foto10.jpg" class="feed-img" alt="foto 10"></div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 aspect-ratio-1x1"><img src="assets/foto11.jpg" class="feed-img" alt="foto 11"></div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 aspect-ratio-1x1"><img src="assets/foto12.jpg" class="feed-img" alt="foto 12"></div>
+    </section>
+  </main>
+
+  <!-- Navbar bawah (mobile) -->
+  <nav class="mobile-nav position-fixed bottom-0 start-0 w-100 bg-white border-top d-flex justify-content-around align-items-center py-2 d-md-none">
+    <a href="#" class="text-center small d-flex flex-column align-items-center">🏠</a>
+    <a href="#" class="text-center small d-flex flex-column align-items-center">🔍</a>
+    <a href="#" class="text-center small d-flex flex-column align-items-center">➕</a>
+    <a href="#" class="text-center small d-flex flex-column align-items-center">❤️</a>
+    <a href="#" class="text-center small d-flex flex-column align-items-center">👤</a>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Clone - Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black">
+
+  <!-- Sidebar (desktop & tablet) -->
+  <aside class="hidden md:flex fixed top-0 left-0 h-full w-60 bg-white border-r border-gray-200 p-4 flex-col">
+    <h1 class="text-2xl font-bold mb-8">Instagram</h1>
+    <nav class="flex flex-col gap-4 text-lg">
+      <a href="#" class="hover:font-semibold">🏠 Beranda</a>
+      <a href="#" class="hover:font-semibold">🔍 Cari</a>
+      <a href="#" class="hover:font-semibold">✨ Jelajahi</a>
+      <a href="#" class="hover:font-semibold">🎥 Reels</a>
+      <a href="#" class="hover:font-semibold">💬 Pesan</a>
+      <a href="#" class="hover:font-semibold">❤️ Notifikasi</a>
+      <a href="#" class="hover:font-semibold">➕ Buat</a>
+      <a href="#" class="hover:font-semibold">👤 Profil</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="md:ml-60 p-4 md:p-8 pb-20">
+    <!-- Header Profil -->
+    <section class="flex flex-col md:flex-row items-center gap-8">
+      <!-- Foto Profil -->
+      <img src="assets/foto8.jpg" alt="profil" class="w-32 h-32 rounded-full border-2 border-gray-300">
+      
+      <!-- Bio -->
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-4">
+          <h2 class="text-xl font-bold">hana.nhumairo</h2>
+          <button class="px-4 py-1 bg-gray-200 rounded text-sm font-semibold hover:bg-gray-300">Ikuti</button>
+          <button class="px-4 py-1 bg-gray-200 rounded text-sm font-semibold hover:bg-gray-300">Kirim pesan</button>
+        </div>
+        <div class="flex gap-6 mt-2">
+          <p><span class="font-bold">12</span> kiriman</p>
+          <p><span class="font-bold">513</span> pengikut</p>
+          <p><span class="font-bold">504</span> diikuti</p>
+        </div>
+        <p class="font-semibold">Hana</p>
+        <p class="text-sm text-gray-600">Bio singkat bisa ditulis di sini ✨</p>
+      </div>
+    </section>
+
+    <!-- Highlight Story -->
+    <section class="flex gap-6 mt-8 overflow-x-auto">
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 aspect-square rounded-full overflow-hidden border-2 border-gray-300">
+          <img src="assets/foto7.jpg" class="w-full h-full object-cover">
+        </div>
+        <span class="text-sm mt-2">Highlight</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 aspect-square rounded-full overflow-hidden border-2 border-gray-300">
+          <img src="assets/foto4.jpg" class="w-full h-full object-cover">
+        </div>
+        <span class="text-sm mt-2">Story</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 aspect-square rounded-full overflow-hidden border-2 border-gray-300">
+          <img src="assets/foto21.jpg" class="w-full h-full object-cover">
+        </div>
+        <span class="text-sm mt-2">Me</span>
+      </div>
+    </section>
+
+    <!-- Feed Foto -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 mt-8">
+      <div class="aspect-square"><img src="assets/foto1.jpg" alt="foto 1" class="w-full h-full object-cover"></div>
+      <div class="aspect-square"><img src="assets/foto2.jpg" alt="foto 2" class="w-full h-full object-cover"></div>
+      <div class="aspect-square"><img src="assets/foto3.jpg" alt="foto 3" class="w-full h-full object-cover"></div>
+      <div class="aspect-square"><img src="assets/foto4.jpg" alt="foto 4" class="w-full h-full object-cover"></div>
+      <div class="aspect-square"><img src="assets/foto5.jpg" alt="foto 5" class="w-full h-full object-cover"></div>
+      <div class="aspect-square"><img src="assets/foto6.jpg" alt="foto 6" class="w-full h-full object-cover"></div>
+      <div class="aspect-square"><img src="assets/foto7.jpg" alt="foto 7" class="w-full h-full object-cover"></div>
+      <div class="aspect-square"><img src="assets/foto8.jpg" alt="foto 8" class="w-full h-full object-cover"></div>
+      <div class="aspect-square"><img src="assets/foto9.jpg" alt="foto 9" class="w-full h-full object-cover"></div>
+      <div class="aspect-square"><img src="assets/foto4.jpg" alt="foto 10" class="w-full h-full object-cover"></div>
+      <div class="aspect-square"><img src="assets/foto3.jpg" alt="foto 11" class="w-full h-full object-cover"></div>
+      <div class="aspect-square"><img src="assets/foto21.jpg" alt="foto 12" class="w-full h-full object-cover"></div>
+    </section>
+  </main>
+
+  <!-- Navbar bawah (khusus mobile) -->
+  <nav class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-300 flex justify-around items-center py-2 md:hidden">
+    <a href="#" class="flex flex-col items-center text-sm">🏠</a>
+    <a href="#" class="flex flex-col items-center text-sm">🔍</a>
+    <a href="#" class="flex flex-col items-center text-sm">➕</a>
+    <a href="#" class="flex flex-col items-center text-sm">❤️</a>
+    <a href="#" class="flex flex-col items-center text-sm">👤</a>
+  </nav>
+
+</body>
+</html>
