@@ -1,12 +1,12 @@
 # Instagram Clone dengan Bootstrap 5
 
-## 🎯 Deskripsi Proyek
+##  Deskripsi Proyek
 Proyek ini adalah implementasi sederhana antarmuka Instagram menggunakan **Bootstrap 5**.  
 Tujuan utamanya adalah memahami cara membuat layout web responsif dengan sistem grid Bootstrap, komponen siap pakai, dan CSS tambahan.
 
 ---
 
-## 🚀 Fitur Utama
+##  Fitur Utama
 1. **Sidebar Desktop**
    - Dibuat dengan `position-fixed` dan `d-flex`.
    - Hanya tampil di layar besar (disembunyikan di mobile dengan `d-none d-md-flex`).
@@ -33,7 +33,7 @@ Tujuan utamanya adalah memahami cara membuat layout web responsif dengan sistem 
 
 ---
 
-## 📂 Struktur Kode
+##  Struktur Kode
 - **aside** → sidebar navigasi (desktop).
 - **main** → konten utama (profil, highlight, feed).
 - **div.row + col** → sistem grid feed foto.
@@ -41,7 +41,7 @@ Tujuan utamanya adalah memahami cara membuat layout web responsif dengan sistem 
 
 ---
 
-## 📱 Responsivitas
+##  Responsivitas
 - Bootstrap menggunakan sistem grid 12 kolom.
 - Breakpoint Bootstrap:
   - `col-` → <576px
@@ -52,7 +52,7 @@ Tujuan utamanya adalah memahami cara membuat layout web responsif dengan sistem 
 
 ---
 
-## 🎯 Alasan Pemilihan Bootstrap
+##  Alasan Pemilihan Bootstrap
 - **Komponen siap pakai** → tombol, nav, grid.
 - **Familiar** untuk banyak developer.
 - **Dokumentasi lengkap** dan komunitas besar.
@@ -60,7 +60,7 @@ Tujuan utamanya adalah memahami cara membuat layout web responsif dengan sistem 
 
 ---
 
-## 📊 Perbandingan dengan Tailwind
+##  Perbandingan dengan Tailwind
 | Fitur            | Tailwind                          | Bootstrap                              |
 |------------------|----------------------------------|----------------------------------------|
 | Grid Feed        | `grid-cols-1 sm:grid-cols-2 ...` | `col-12 col-sm-6 col-md-4 col-lg-3`    |
@@ -71,6 +71,6 @@ Tujuan utamanya adalah memahami cara membuat layout web responsif dengan sistem 
 
 ---
 
-## 📊 Kesimpulan
+##  Kesimpulan
 - Bootstrap lebih **standar & stabil**, cocok untuk proyek formal.
 - Namun, untuk layout spesifik seperti feed Instagram, butuh **CSS tambahan** agar sama rapihnya dengan Tailwind.
